@@ -1,6 +1,13 @@
 @font-face {
 	font-family: MabryPro;
 	font-display: swap;
+	src: url("../fonts/MabryPro-Bold.woff2") format("woff2"), url("../fonts/MabryPro-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: MabryPro;
+	font-display: swap;
 	src: url("../fonts/MabryPro-Black.woff2") format("woff2"), url("../fonts/MabryPro-Black.woff") format("woff");
 	font-weight: 900;
 	font-style: normal;
@@ -24,12 +31,5 @@
 	font-display: swap;
 	src: url("../fonts/MabryPro-Medium.woff2") format("woff2"), url("../fonts/MabryPro-Medium.woff") format("woff");
 	font-weight: 500;
-	font-style: normal;
-}
-@font-face {
-	font-family: MabryPro;
-	font-display: swap;
-	src: url("../fonts/MabryPro-Bold.woff2") format("woff2"), url("../fonts/MabryPro-Bold.woff") format("woff");
-	font-weight: 700;
 	font-style: normal;
 }

@@ -1,0 +1,33 @@
+.progress_block {
+  p {
+    min-width: 105px;
+    max-width: 105px;
+    white-space: nowrap;
+    margin-right: 10px;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-greenLight);
+  }
+
+  &-bar {
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    display: block;
+    height: 16px;
+    background-color: var(--color-greyLight);
+  }
+
+  &-prog {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(101.28deg, #81efe2 -17.43%, #248bca 79.51%);
+
+    z-index: 6;
+  }
+}
