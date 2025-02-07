@@ -73,6 +73,16 @@
             color: var(--color-white);
           }
         }
+
+        &:hover {
+          .icon-svg {
+            transform: translateX(6px);
+          }
+          p {
+            color: var(--color-greenLight);
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
