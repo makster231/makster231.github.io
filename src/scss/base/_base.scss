@@ -1,0 +1,24 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: 16px;
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  text-wrap: pretty;
+  word-break: break-word;
+  line-height: 1;
+}
+
+header,
+footer {
+  flex-shrink: 0;
+}
+
+main {
+  /* Занять всё оставшееся пространство */
+  flex-grow: 1;
+}

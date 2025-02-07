@@ -1,0 +1,48 @@
+.dialog {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  max-width: 1200px;
+  width: 100%;
+
+  &_bg {
+    background-color: var(--color-white);
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    @media (min-width: 640px) {
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+  }
+
+  & > :not(.dialog_bg) {
+    z-index: 100;
+    position: relative;
+  }
+
+  .dialog {
+    &_close {
+      position: absolute;
+      right: 30px;
+      top: 25px;
+      z-index: 101;
+      cursor: pointer;
+
+      path {
+        transition: 0.3s ease;
+      }
+
+      &:hover {
+        path {
+          stroke: var(--color-attention) !important;
+          fill: var(--color-attention) !important;
+        }
+      }
+    }
+  }
+}
