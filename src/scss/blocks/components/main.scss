@@ -1,7 +1,7 @@
 .main {
   width: 100%;
 
-  @media (min-width: 640px) {
+  @media (min-width: 641px) {
     max-width: 67%;
   }
   &_head {
@@ -10,9 +10,10 @@
     margin-bottom: 30px;
     background-image: url(../img/bg-m.png);
     background-position: 0 0;
+    background-size: 100%;
     background-repeat: no-repeat;
 
-    @media (min-width: 640px) {
+    @media (min-width: 641px) {
       background-position: 100% 0;
       background-image: url(../img/bg.png);
       min-height: 380px;
@@ -25,7 +26,7 @@
   &_content {
     padding: 0 16px;
 
-    @media (min-width: 640px) {
+    @media (min-width: 641px) {
       padding: 0 50px;
     }
 

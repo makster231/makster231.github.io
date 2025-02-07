@@ -3,15 +3,3 @@
     @content;
   }
 }
-
-@mixin laptop() {
-  @media (max-width: 1220px) {
-    @content;
-  }
-}
-
-@mixin tablet() {
-  @media (min-width: 640px) {
-    @content;
-  }
-}
