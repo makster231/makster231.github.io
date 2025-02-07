@@ -1,3 +1,20 @@
+.h1 {
+  color: var(--color-white);
+  font-size: 40px;
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.h2 {
+  color: var(--color-greenLight);
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+  font-weight: bold;
+}
 .h3 {
   color: var(--color-blue);
   font-size: 24px;
@@ -6,5 +23,19 @@
   text-align: center;
   display: block;
   margin-bottom: 32px;
+  font-weight: bold;
+}
+
+.h4 {
+  color: var(--color-black);
+  font-size: 24px;
+  text-transform: uppercase;
+  display: block;
+}
+.h5 {
+  color: var(--color-black);
+  font-size: 20px;
+  text-transform: uppercase;
+  display: block;
   font-weight: bold;
 }

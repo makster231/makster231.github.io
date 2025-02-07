@@ -22,6 +22,11 @@ footer {
 .wrapper {
   flex-grow: 1;
   display: flex;
+  background-color: var(--color-white);
+  overflow: hidden;
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
 }
 
 aside,
