@@ -64,7 +64,7 @@ gulp.task("html:dev", function () {
       // )
 
       // .pipe(html())
-      .pipe(gulp.dest("./build/"))
+      .pipe(gulp.dest("./"))
   );
 });
 
