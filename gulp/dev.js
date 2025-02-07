@@ -69,29 +69,31 @@ gulp.task("html:dev", function () {
 });
 
 gulp.task("sass:dev", function () {
-  return gulp
-    .src("./src/scss/*.scss")
-    .pipe(changed("./build/css/"))
-    .pipe(plumber(plumberNotify("SCSS")))
-    .pipe(sourceMaps.init())
-    .pipe(sassGlob())
-    .pipe(sass())
-    
-    .pipe(
-      replace(
-        /(['"]?)(\.\.\/)+(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/gi,
-        "$1$2$3$4$6$1"
-      )
-    )
+  return (
+    gulp
+      .src("./src/scss/*.scss")
+      .pipe(changed("./build/css/"))
+      .pipe(plumber(plumberNotify("SCSS")))
+      .pipe(sourceMaps.init())
+      .pipe(sassGlob())
+      .pipe(sass())
 
-    // .pipe(
-    //   autoprefixer({
-    //     browsers: ["last 200 version", "> 1%", "not dead"],
-    //     cascade: false,
-    //   })
-    // )
-    .pipe(sourceMaps.write())
-    .pipe(gulp.dest("./build/css/"));
+      .pipe(
+        replace(
+          /(['"]?)(\.\.\/)+(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/gi,
+          "$1$2$3$4$6$1"
+        )
+      )
+
+      // .pipe(
+      //   autoprefixer({
+      //     browsers: ["last 200 version", "> 1%", "not dead"],
+      //     cascade: false,
+      //   })
+      // )
+      .pipe(sourceMaps.write())
+      .pipe(gulp.dest("./build/css/"))
+  );
 });
 
 gulp.task("images:dev", function () {
@@ -195,7 +197,7 @@ const serverOptions = {
 };
 
 gulp.task("server:dev", function () {
-  return gulp.src("./build/").pipe(server(serverOptions));
+  return gulp.src("./").pipe(server(serverOptions));
 });
 
 gulp.task("watch:dev", function () {
