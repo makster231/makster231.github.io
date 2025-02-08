@@ -72,9 +72,25 @@
       &-article {
         padding-left: 24px;
         margin-bottom: 24px;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 3px;
+          top: 6px;
+          width: 2px;
+          height: 122%;
+          background-color: var(--color-blue);
+          display: block;
+        }
 
         &:last-of-type {
           margin-bottom: 0;
+
+          &::before {
+            content: none;
+          }
         }
 
         .h5 {
